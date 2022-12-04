@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "29.0.3"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs')
+    implementation project(path: ':data')
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-alpha01"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
+    implementation "com.google.code.gson:gson:2.8.9"
+
+    implementation 'com.google.dagger:dagger:2.41'
+    kapt 'com.google.dagger:dagger-compiler:2.41'
+}
+
+repositories {
+    google()
+    mavenCentral()
+}

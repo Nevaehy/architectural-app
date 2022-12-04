@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_error_message">Something went wrong</string>
+    <string name="getting_response_description">Getting response from server...</string>
+    <string name="loading_and_rendering_description">Loading and rendering image...</string>
+</resources>

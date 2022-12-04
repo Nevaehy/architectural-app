@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="common_error_message">Something went wrong</string>
+
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="first_tab_title">First child fragment title (image)</string>
+    <string name="second_tab_title">Second child fragment title (link)</string>
+    <string name="bottom_sheet_title">Test bottom sheet dialog</string>
+    <string name="test_button">Test button</string>
+    <string name="try_again_button">Try again</string>
+
+</resources>

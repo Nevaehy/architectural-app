@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="SplashTheme" parent="BaseTheme">
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="actionBarSize">56dp</item>
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorPrimaryDark">@color/mainColor</item>
+        <item name="colorAccent">@color/mainColor</item>
+        <item name="colorControlActivated">@color/mainColor</item>
+        <item name="colorControlNormal">@color/mainColor</item>
+    </style>
+
+    <!-- Text -->
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Text.Body">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/mainTextColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+
+    <style name="Text.Body.Bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Text.Heading1">
+        <item name="android:textColor">@color/mainTextColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Tabs -->
+    <style name="TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabRippleColor">@null</item>
+        <item name="tabTextColor">@color/mainTextColor</item>
+        <item name="tabTextAppearance">@style/Text.Body</item>
+        <item name="tabIndicatorColor">@color/secondaryColor</item>
+        <item name="tabPaddingStart">13dp</item>
+        <item name="tabPaddingEnd">13dp</item>
+        <item name="tabPaddingBottom">3dp</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabInlineLabel">true</item>
+        <item name="tabContentStart">3dp</item>
+        <item name="tabMinWidth">0dp</item>
+    </style>
+
+</resources>

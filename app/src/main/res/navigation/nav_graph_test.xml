@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manage_lists_nav_graph.xml"
+    app:startDestination="@id/parentTestFragment">
+
+    <fragment
+        android:id="@+id/parentTestFragment"
+        android:name="in.test.pro.beta.app.features.test.parent.TestParentFragment"
+        android:label="parentTestFragment"
+        tools:layout="@layout/fragment_test_parent">
+        <action
+            android:id="@+id/actionBottomSheetDialog"
+            app:destination="@id/bottomSheetDialog" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/bottomSheetDialog"
+        android:name="in.test.pro.beta.app.features.test.infodialog.InfoScreenDialogFragment"
+        android:label="bottomSheetDialog"
+        tools:layout="@layout/fragment_info_screen_dialog">
+        <argument
+            android:name="body"
+            android:defaultValue=""
+            app:argType="string"
+            app:nullable="false" />
+    </dialog>
+
+</navigation>

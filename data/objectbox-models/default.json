@@ -1,0 +1,226 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4770383725288882808",
+      "lastPropertyId": "19:7856752067797294936",
+      "name": "Bod",
+      "properties": [
+        {
+          "id": "1:3794758439708161167",
+          "name": "uuid",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3309974245643241314",
+          "name": "exchange",
+          "type": 9
+        },
+        {
+          "id": "3:2669113942893416966",
+          "name": "expiryDate",
+          "type": 6
+        },
+        {
+          "id": "4:7103469709127721819",
+          "name": "expiry",
+          "type": 9
+        },
+        {
+          "id": "5:2256311007620742684",
+          "name": "instrumentType",
+          "type": 9
+        },
+        {
+          "id": "6:8775398164913537302",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "7:8681782397143630285",
+          "name": "optionType",
+          "type": 9
+        },
+        {
+          "id": "8:2955650749563163762",
+          "name": "series",
+          "type": 9
+        },
+        {
+          "id": "9:7311485592140406460",
+          "name": "strikePrice",
+          "type": 9
+        },
+        {
+          "id": "10:4218125757138684810",
+          "name": "symbol",
+          "type": 9
+        },
+        {
+          "id": "11:2802590787463295333",
+          "name": "token",
+          "type": 9
+        },
+        {
+          "id": "12:7501075090418812600",
+          "name": "weekly",
+          "type": 1
+        },
+        {
+          "id": "13:1447708483273730285",
+          "name": "searchPriority",
+          "type": 5
+        },
+        {
+          "id": "14:4320481712002169046",
+          "name": "market",
+          "type": 9
+        },
+        {
+          "id": "15:5419497619404368259",
+          "name": "lotSize",
+          "type": 5
+        },
+        {
+          "id": "16:2694835509785747275",
+          "name": "tickSize",
+          "type": 8
+        },
+        {
+          "id": "17:502000390081881691",
+          "name": "maxQuantity",
+          "type": 5
+        },
+        {
+          "id": "18:2392988734755479061",
+          "name": "isin",
+          "type": 9
+        },
+        {
+          "id": "19:7856752067797294936",
+          "name": "logo",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:1766638035562819404",
+      "lastPropertyId": "19:2460267747502088032",
+      "name": "BodV2",
+      "properties": [
+        {
+          "id": "1:6601775358137227166",
+          "name": "uuid",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6098996430023692169",
+          "name": "exchange",
+          "type": 9
+        },
+        {
+          "id": "3:73642274636483293",
+          "name": "expiryDate",
+          "type": 6
+        },
+        {
+          "id": "4:2155144228143298769",
+          "name": "expiry",
+          "type": 9
+        },
+        {
+          "id": "5:7681908951831537609",
+          "name": "instrumentType",
+          "type": 9
+        },
+        {
+          "id": "6:1221453460376923572",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "7:7772990299960618722",
+          "name": "optionType",
+          "type": 9
+        },
+        {
+          "id": "8:7733290920282770776",
+          "name": "series",
+          "type": 9
+        },
+        {
+          "id": "9:8819742263066635187",
+          "name": "strikePrice",
+          "type": 9
+        },
+        {
+          "id": "10:1003202527736045340",
+          "name": "symbol",
+          "type": 9
+        },
+        {
+          "id": "11:7643809360189913410",
+          "name": "token",
+          "type": 9
+        },
+        {
+          "id": "12:5687563749516776547",
+          "name": "weekly",
+          "type": 1
+        },
+        {
+          "id": "13:9134488776322632501",
+          "name": "searchPriority",
+          "type": 5
+        },
+        {
+          "id": "14:8746681238354236223",
+          "name": "market",
+          "type": 9
+        },
+        {
+          "id": "15:3188069259400124588",
+          "name": "lotSize",
+          "type": 5
+        },
+        {
+          "id": "16:5423211950113157994",
+          "name": "tickSize",
+          "type": 8
+        },
+        {
+          "id": "17:8164310555460757352",
+          "name": "maxQuantity",
+          "type": 5
+        },
+        {
+          "id": "18:9190727761558810098",
+          "name": "isin",
+          "type": 9
+        },
+        {
+          "id": "19:2460267747502088032",
+          "name": "logo",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:1766638035562819404",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

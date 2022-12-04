@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+
+androidExtensions {
+    experimental = true
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "in.test.app"
+        versionCode 1
+        versionName "1"
+        minSdk 21
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    dexOptions {
+        incremental true
+    }
+    kapt {
+        correctErrorTypes true
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs')
+    implementation project(path: ':presentation')
+    // the only violation of clean architecture because of DI...
+    // unfortunately hadn't enough time to configure DI appropriately
+    // but in all other cases the unidirectional access of clean architecture isn't violated
+    implementation project(path: ':domain')
+    implementation project(path: ':data')
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    implementation "androidx.core:core-ktx:1.3.2"
+    implementation "com.google.android.material:material:1.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:1.4.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0-alpha01}"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "androidx.annotation:annotation:1.2.0"
+    implementation "androidx.work:work-runtime-ktx:2.7.1"
+
+    implementation "com.google.code.gson:gson:2.8.9"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
+    implementation "androidx.navigation:navigation-testing:2.3.5"
+
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.okhttp3:okhttp:4.9.1"
+
+    implementation "com.google.android.play:core:1.10.2"
+    implementation "com.github.bumptech.glide:glide:4.12.0"
+    kapt "com.github.bumptech.glide:compiler:4.12.0"
+
+    implementation 'com.google.dagger:dagger:2.41'
+    kapt 'com.google.dagger:dagger-compiler:2.41'
+
+    implementation 'androidx.browser:browser:1.3.0'
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs 'libs'
+    }
+}
