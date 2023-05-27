@@ -21,3 +21,5 @@
 #### 5. Build and Launch the app
 
 ## Screenshots
+![image](https://github.com/Nevaehy/architectural-app/assets/8986848/084ad7d5-4c58-4657-914f-20b992a803d3)
+![image](https://github.com/Nevaehy/architectural-app/assets/8986848/f6ba77a2-b11b-4df6-9e62-091bc7e397c8)
